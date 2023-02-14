@@ -41,11 +41,15 @@ body
 h1
 {
     font-size: 3.6rem;
+    /* font-family: 'Barlow', sans-serif; */
+    font-family: 'Cinzel', serif;
 }
 
 h2
 {
     font-size: 2.6rem;
+    /* font-family: 'Barlow', sans-serif; */
+    font-family: 'Cinzel', serif;
 }
 
 header
@@ -142,13 +146,23 @@ nav ul a
     align-items: center;
     padding: 20px;
 }
+.article-cover h1
+{
+    color: white;
+}
+.article-cover p
+{
+    color: var(--grey2);
+}
 
 .content-section-container
 {
     display: flex;
     width: 100%;
     height: auto;
+    padding: 20px;
     background-color: var(--secondary);
+    gap: 20px;
 }
 
 
@@ -174,4 +188,19 @@ footer
     width: 100%;
     height: auto;
     background-color: var(--grey2);
+}
+
+footer div
+{
+    display: flex;
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+footer img
+{
+    width: auto;
+    height: 60px;
 }
