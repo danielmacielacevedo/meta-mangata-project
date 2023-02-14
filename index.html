@@ -19,13 +19,18 @@
     <header>
         <div class="nav-container">
             <div class="nav-logo-container">
-                <img src="./assets/Asset 4@3x.png" alt="Logo Mangata & Gallo">
+                <!-- <img src="./assets/Asset 4@3x.png" alt="Logo Mangata & Gallo"> -->
+                <div id="remadeLogo">
+                    <span>Mangata</span>
+                    <span>&</span>
+                    <span>Gallo</span>
+                </div>
             </div>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#space">Space Hole Edition</a></li>
-                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -33,35 +38,78 @@
     </header>
 
     <main>
-        <section class="cover-page-container">
+        <section id="home" class="cover-page-container">
             <video id="background-video" autoplay loop muted playsinline poster="./assets/Preview-VideoCover-SpaceEdition-byDanielMacielAcevedo.jpg">
                 <source src="./assets/VideoCover-SpaceEdition-byDanielMacielAcevedo.mp4" type="video/mpeg">
                 <source src="./assets/VideoCover-SpaceEdition-byDanielMacielAcevedo.webm" type="video/webm">
             </video>
+            <img id="featured-floating-image" src="./assets/featured_mangata_ring.png" alt="Featured ring (Four Hole Ring)">
             <article class="article-cover">
-                <h1>Space Hole Edition</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <h1 id="space">Space Hole Edition</h1>
+                <p>Lorem ipsum sit amet elit by <strong>Daniel Maciel Acevedo</strong></p>
             </article>
         </section>
 
 
         <section class="content-section-container">
-            <article class="article-product">
-                <h2>One</h2>
-                <span>Space Hole</span>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit inventore modi a soluta minus accusamus sunt, odit maiores consequatur perferendis, quidem optio excepturi voluptatem aperiam provident tempore asperiores ipsum? Rerum.</p>
-            </article>
+        <!-- read CSS file - line 187 and 198 -->
+            <div class="articles-container">
+                <article class="article-product">
+                    <h2>One</h2>
+                    <span>Space Hole | Ring</span>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit inventore modi a soluta minus accusamus sunt, odit maiores consequatur perferendis, quidem optio excepturi voluptatem aperiam provident tempore asperiores?</p>
+                </article>
+    
+                <article class="article-product">
+                    <h2>Two</h2>
+                    <span>Space Holes | Ring</span>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit inventore modi a soluta minus accusamus sunt, aperiam provident?</p>
+                </article>
+    
+                <article class="article-product">
+                    <h2>Four</h2>
+                    <span>Space Holes | Ring</span>
+                    <p id="about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit inventore modi, odit maiores consequatur perferendis, quidem optio excepturi voluptatem aperiam provident tempore asperiores ipsum? Rerum.</p>
+                </article>
+            </div>
+        </section>
 
-            <article class="article-product">
-                <h2>Two</h2>
-                <span>Space Hole</span>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit inventore modi a soluta minus accusamus sunt, odit maiores consequatur perferendis, quidem optio excepturi voluptatem aperiam provident tempore asperiores ipsum? Rerum.</p>
+        <section class="about-section-container">
+            <article>
+                <h2>About Us</h2>
+                <p>Mangata and Gallo is a jewelry store that specializes in special occasions like engagements, weddings and anniversaries. The jewelry company primarily operates online and has a small storefront in Austin, Texas with an atelier attached for browsing. Mangata & Gallo's selection of jewelry is known for its high-quality and classic look. The owner, an Austin local, is well known for her jewelry designs.  </p>
             </article>
+        </section>
 
-            <article class="article-product">
-                <h2>Four</h2>
-                <span>Space Hole</span>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit inventore modi a soluta minus accusamus sunt, odit maiores consequatur perferendis, quidem optio excepturi voluptatem aperiam provident tempore asperiores ipsum? Rerum.</p>
+        <section id="contact" class="contact-section-container">
+            <article>
+                <div class="contact-image"></div>
+                <div class="contact-form">
+                    <h2>Contact</h2>
+                    <p>Lorem ipsum nobis omnis repellendus! Impedit?</p>
+                    <div class="form-container">
+                        <form id="contact-form">
+                            <div class="inputBox">
+                                <input name="Firs name" type="text" required="required">
+                                <span>First name</span>
+                                <i></i>
+                            </div>
+                            <div class="inputBox">
+                                <input name="Email" type="email" required="required">
+                                <span>Email</span>
+                                <i></i>
+                            </div>
+                            <div class="inputBox">
+                                <textarea name="Message" required="required"></textarea>
+                                <span>Message</span>
+                                <i></i>
+                            </div>
+                            <div class="buttons-form">
+                                <input id="button-form" type="submit" value="Send">
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </article>
         </section>
     </main>
@@ -72,6 +120,14 @@
         </div>
         <div>
             <p>Copyright Mangata & Gallo</p>
+        </div>
+
+        <!-- Powered by  -->
+        <div id="PoweredByDanielMacielAcevedo">
+            <div>
+                <span>Powered By Daniel Maciel Acevedo</span>
+                <span> <i></i> HTML and CSS in depth | Meta Profesional Certificate </span>
+            </div>
         </div>
     </footer>
 </body>
